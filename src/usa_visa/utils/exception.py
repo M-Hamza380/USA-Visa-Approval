@@ -1,7 +1,7 @@
 import sys
 
 class USAVISAException(Exception):
-    def __init__(self, error_message: Exception, error_detail:sys):
+    def __init__(self, error_message: Exception, error_detail:sys) -> None:
         super().__init__(error_message)
         self.error_message = USAVISAException.get_detailed_error_message(error=error_message, error_detail=error_detail)
     
@@ -16,10 +16,9 @@ class USAVISAException(Exception):
         line number: [{exception_block_line_number}] 
         error message: [{error}]
         """
-
         return error_message
 
-    def __str__(self):
+    def __str__(self) -> str: 
         return self.error_message
     
     def __repr__(self) -> str:

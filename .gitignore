@@ -163,4 +163,5 @@ cython_debug/
 
 
 .myENV/*
-
+ChatGPT.txt
+notebook_experiments/Data/*

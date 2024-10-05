@@ -12,7 +12,7 @@ current_day = datetime.now().strftime("%A")
 day_dir = os.path.join(date_dir, current_day)
 os.makedirs(day_dir, exist_ok=True)
 
-def create_directory_with_timestamp(base_time):
+def create_directory_with_timestamp(base_time) -> str:
     timestamp = base_time.strftime("%m_%d_%Y_%H_%M")
     timestamp_dir = os.path.join(day_dir, timestamp)
     os.makedirs(timestamp_dir, exist_ok=True)
