@@ -41,11 +41,10 @@ pip install -r requirements.txt
 code .env
 ```
 
-7. Define your SECRET_KEY and DB_NAME in the .env file:
+7. Using MongoDB add your MONGODB_URL in the .env file:
 
 ```
-SECRET_KEY="Your Secret key"
-DB_NAME="Your database name"
+MONGODB_URL="Add your MONGODB_URL_LINK"
 ```
 
 8. Open your terminal in VS Code and run the command:
